@@ -392,4 +392,11 @@ def root():
 # RUN SERVER
 # ─────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    print()
+    print("=" * 60)
+    print("  DOG AI SERVER IS READY!")
+    print("  Test in your browser at:")
+    print("  http://localhost:8000/docs")
+    print("=" * 60)
+    print()
     uvicorn.run("ai_server:app", host="0.0.0.0", port=8000, reload=False)
